@@ -26,7 +26,7 @@ unzip /tmp/frontend.zip &>>${log_file}
 
 print_head "Copying Roboshop Configuration"
 
-cp $(pwd)/configs/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp $(code_dir)/configs/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 print_head "Enabling and Restarting nginx"
 
