@@ -25,8 +25,6 @@ print_head "Extracting Frontend code"
 unzip /tmp/frontend.zip &>>${log_file}
 
 print_head "Copying Roboshop Configuration"
-pwd
-ls -ltr
 
 cp ${code_dir}/configs/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
 
