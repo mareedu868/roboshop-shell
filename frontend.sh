@@ -28,7 +28,7 @@ print_head "Copying Roboshop Configuration"
 pwd
 ls -ltr
 
-cp $(code_dir)/configs/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp ${code_dir}/configs/nginx-roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 print_head "Enabling and Restarting nginx"
 
