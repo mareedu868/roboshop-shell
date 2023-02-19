@@ -1,5 +1,6 @@
 code_dir=$(pwd)
 log_file=/tmp/roboshop.log
+err_file=/tmp/roboerr.log
 rm -rf ${log_file}
 
 print_head() {
