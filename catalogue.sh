@@ -1,6 +1,6 @@
 source common.sh
 print_head "Downloading nodejs rpm"
-curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>${lof_file}
+curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>${log_file}
 print_head "Installing nodejs"
 yum install nodejs -y &>>${log_file}
 useradd roboshop
