@@ -26,4 +26,4 @@ cp ${code_dir}/configs/mongodb.repo /etc/yum.repos.d/mongo.repo &>>${log_file}
 print_head "Installing mongodb client"
 yum install mongodb-org-shell -y &>>${log_file}
 print_head "loading catalogue schema"
-mongo --host mongodb.mydevopslearning.online </app/schema/catalogue.js &>>${log_file}
+mongo --host 172.31.56.202 </app/schema/catalogue.js &>>${log_file}
