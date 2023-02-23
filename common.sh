@@ -48,7 +48,7 @@ nodejs() {
   status_check $?
 
   print_head "Downloading ${component} code"
-  curl -L -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/${component}.zip &>>${log_file}
+  curl -L -o /tmp/${component}.zip https://roboshop-artifacts.s3.amazonaws.com/${component}.zip &>>${log_file}
   status_check $?
 
   print_head "Extracting ${component} code"
